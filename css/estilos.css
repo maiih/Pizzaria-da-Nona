@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 20px;
+}
+
+.container {
+    width: 1140px;
+    max-width: 100%;
+    margin: auto;
+}
+
+nav {
+    background-color: rgba(214, 149, 11, 0.815);
+    width: 100%;
+    float: right;
+    margin-bottom: 30px;
+}
+
+nav ul li {
+    display: inline;
+    list-style: none;
+    padding-right: 20px;
+    padding: 35px 15px;
+    float: left;
+}
+
+nav ul {
+    float: right;
+    margin: 20px;
+}
+
+nav img {
+    width: 100px;
+    margin: 10px;
+}
+
+nav ul li a {
+    background-color: #4E1F66;
+    color: white;
+    padding: 20px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.clearfix{
+    overflow: auto;
+    margin-top: 25px;
+}
+
+.col-6 img {
+    width: 75%;
+}
+
+p {
+    margin: 30px;
+    text-align: left;
+}
+
+h1 {
+    margin: 30px;
+    text-align: left;
+}
+
+.reserva {
+    padding: 10px;
+    color: black;
+    background-color: orange;
+    border-radius: 15px;
+    font-size: large;
+    font-family: 'Lobster', cursive;
+    margin-bottom: 35px;
+    margin-left: 25px;
+}
+
+footer p {
+    text-align: center;
+    margin: 5px;
+}
+
+footer {
+    background-color: rgba(214, 149, 11, 0.815);
+    margin-top: 20px;
+    padding: 30px;
+}
+
+header {
+    background-color: rgb(173, 166, 166);
+}
+
+main ul li{
+    margin: 0;
+}
+
+.pedido {
+    padding: 10px;
+    float: left;
+    color: black;
+    background-color: orange;
+    border-radius: 15px;
+    margin-top: 30px;
+    font-size: large;
+    font-family: 'Lobster', cursive;
+}
+
+
+input[type="text"],
+textarea, select {
+    width: 100%;
+    padding: 6px;
+    border: 2px solid orange;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    resize: none;
+    outline: none;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    background-color: #ece03a;
+}
+
+fieldset {
+    padding: 10px;
+    border-color:#ece03a;
+    font-family: 'Lobster', cursive;
+    border-radius: 20px;
+}
+
+.enviar {
+    padding: 10px;
+    color: black;
+    background-color: orange;
+    border-radius: 15px;
+    font-size: large;
+    font-family: 'Lobster', cursive;
+}
+
+.col-3 img {
+    width: 200px;
+}

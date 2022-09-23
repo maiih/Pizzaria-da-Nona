@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/pizza2.jpg" />
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Faça seu pedido </title>
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <a href="index.html">
+                <img src="img/pizza logo.png" alt="pizza">
+            </a>
+            <ul>
+                <li>
+                    <a href="cardapio.html">Cardápio</a>
+                </li>
+                <li>
+                    <a href="pedido.html">Faça seu pedido!</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="container clearfix">
+            <form id="pedido">
+                <fieldset>
+                    <label>Nome</label>
+                    <input type="text" placeholder="Informe seu Nome" id="nome" required>
+                    <label>Telefone</label>
+                    <input type="text" placeholder="Informe seu número de whatsapp" required>
+                    <label>Endereço</label>
+                    <input type="text" placeholder="Informe seu Endereço" required>
+                    <label for="nome">Escolha sua Pizza!</label>
+                    <select name="sabor" id="sabor" required>
+                        <option value="">Selecione o sabor</option>
+                        <option value="queijo">Queijo</option>
+                        <option value="bacon">Bacon</option>
+                        <option value="calabresa">Calabresa</option>
+                        <option value="camarão">Camarão</option>
+                        <option value="personalizada">Personalizada</option>
+                    </select>
+                    <label>Deseja borda?</label>
+                    <div class="form-group">
+                        <input type="radio" name="borda" id="sim" value="Sim" checked>
+                        <label for="sim">Sim</label>
+                        <input type="radio" name="borda" id="nao" value="Não" checked>
+                        <label for="nao">Não</label>
+                    </div> <br>
+                    <label>Observações</label>
+                    <textarea rows="5" placeholder="Escreva aqui as observações"></textarea>
+                    <button type="submit" onclick="enviar(nome.value);" class="enviar">Enviar</button>
+                </fieldset>
+
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="container clearfix">
+            <p>© Todos os Direitos Reservados.</p>
+            <p>Contato: (49) 9 9999-9999</p>
+        </div>
+    </footer>
+</body>
+<script src="js/main.js"></script>
+
+</html>
